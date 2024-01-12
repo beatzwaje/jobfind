@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Opportunities</title>
+  <style>
+    *.navbar {
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding-left: 11px;
+    padding-right: 14px;
+    margin-right: 30px;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    margin: 0;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+.register-button:hover,
+.signin-button:hover {
+  background-color: #555;
+}
+ 
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+ 
+.line .side1 {
+    padding-right: 50px;
+}
+ 
+.side1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: green;
+}
+ 
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+ 
+h2 {
+      color:green;
+	  text-align:center;
+    }
+
+    form {
+      margin-bottom: 20px;
+	  align-items:center;
+	  color:orange;
+	  
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+	  align-items:center;
+    }
+
+    input[type="text"],
+    select {
+      width: 250px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    h3 {
+      color:darkblue;
+      margin: 20px 0;
+	  text-align:center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    span {
+      margin-left: 5px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+.blue{
+background-color:blue;
+width:40%;
+margin-left:410px;
+
+}
+.omg{
+background-color:darkgreen;
+width:40%;
+margin-left:410px;
+text-align:center;
+}
+    .job-list {
+      list-style-type: none;
+      padding: 0;
+	  font-size:60px;
+    }
+
+    .job-item {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	  align-items:center;
+    }
+
+    .job-title {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job-location,
+    .job-category,
+    .job-company,
+    .job-date,
+    .job-deadline {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .job-date,
+    .job-deadline {
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .footer {
+      text-align: center;
+      color: #999;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+		margin:18px 25px 27px 78px;
+      }
+
+      .job-item {
+        padding: 10px;
+      }
+
+      .job-title {
+        font-size: 18px;
+      }
+
+      .job-location,
+      .job-category,
+      .job-company,
+      .job-date,
+      .job-deadline {
+        font-size: 60px;
+		
+      }
+	  .vt{
+	  max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: orange;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	
+	}img
+align-items:center;
+margin-left:70px;
+	}
+  </style>
+</head>
+<body background="ka.avif">
+<div class="topnav"> 
+
+ <a class= href="#home">HOME</a>
+  
+  
+  <a class= href= "dropdown">JOBSEEKERS</a>
+  
+	     <a href="#news"><sub>TRAININGS</sub></a>
+    <a href="#news"><sub>EMPLOYERS</sub></a>
+	    <a href="happy.html"><sub>DIGITAL JOBS</sub></a>
+	<a href="#news"><sub></sub></a>
+   <a href="#contact"><sub>CONTENT</sub></a>
+ <a href="vubaha.html">SIGN UP</a>
+    <a href="del.html"><sub>SIGN OUT</sub></a>
+      <a href="cusa.html"><sub>CONTACT US</sub></a>
+   <a href="#news"><sub>PROFILE</sub></a>
+    <a href="login.html"><sub>NEW AND EVENTS</sub></a>
+	</div>
+
+<img src="C:\Users\hp\Desktop\wakawaka\kare.avif" alt="Image description" height="98" width="100">
+  <div class="blue">
+  <h2>SEARCH FOR OPPORTUNITIES</h2>
+  <form>
+    <label for="jobTitle">JOB TITLE OR KEYWORD</LABEL>
+    <INPUT TYPE="TEXT" ID="JOBTITLE" NAME="JOBTITLE">
+    
+    <LABEL FOR="LOCATION">LOCATION</LABEL>
+    <INPUT TYPE="TEXT" ID="LOCATION" NAME="LOCATION">
+    
+    <LABEL FOR="CATEGORIES">ALL CATEGORIES</LABEL>
+    <SELECT ID="CATEGORIES" NAME="CATEGORIES">
+      <OPTION VALUE="ALL">ALL</OPTION>
+      <OPTION VALUE="MANAGEMENT">MANAGEMENT</OPTION>
+      <OPTION VALUE="FINANCE">FINANCE</OPTION>
+      <OPTION VALUE="OTHERS">OTHERS</option>
+      <!-- Add more options as needed -->
+    </select>
+    
+    <button type="submit" class="btn btn-primary"> <a href="akarabo.html">find jobs</a>
+  </form>
+ 
+  </div>
+  
+  
+  <div class="omg">
+ <h3>Filter job</h3>
+  
+  <div class="vt">
+    <label for="employmentType">Type of employment</label>
+    <ul>
+      <li>
+        <input type="radio" id="job" name="employmentType" value="job">
+        <label for="job">Job</label>
+        <span>29</span>
+      </li>
+      <li>
+        <input type="radio" id="internship" name="employmentType" value="internship">
+        <label for="internship">Internship</label>
+        <span>0</span>
+      </li>
+	  </div>
+      <li>
+        <input type="radio" id="apprenticeship" name="employmentType" value="apprenticeship">
+        <label for="apprenticeship">Apprenticeship</label>
+        <span>0</span>
+      </li>
+      <!-- Add more options as needed -->
+    </ul>
+  
+  
+  <div>
+    <label for="contractType">Type of Contract</label>
+    <ul>
+      <li>
+        <input type="radio" id="contractual" name="contractType" value="contractual">
+        <label for="contractual">Contractual</label>
+        <span>0</span>
+      </li>
+      <li>
+        <input type="radio" id="fullTime" name="contractType" value="fullTime">
+        <label for="fullTime">Full time</label>
+        <span>0</span>
+      </li>
+      <li>
+        <input type="radio" id="notApplicable" name="contractType" value="notApplicable">
+        <label for="notApplicable">Not applicable</label>
+        <span>0</span>
+      </li>
+      <li>
+        <input type="radio" id="temporary" name="contractType" value="temporary">
+        <label for="temporary">Temporary</label>
+        <span>0</span>
+      </li>
+      <!-- Add more options as needed -->
+    </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container">
+    <h1>Job Opportunities</h1>
+    <ul class="job-list">
+      <li class="job-item">
+        <div class="job-title">Sales Engineer</div>
+        <div class="job-location">Location: Nyarugenge</div>
+        <div class="job-category">Category: Others</div>
+        <div class="job-company">Company: Blue Gear Machinery Ltd</div>
+        <div class="job-date">Posted: 1 day ago</div>
+        <div class="job-deadline">Application Deadline: Dec 21, 2023</div>
+      </li>
+      <li class="job-item">
+       <div class="job-title">
+	    <h1>Receptionist</h1>
+
+  <img src="C:\Users\hp\Desktop\wakawaka\pee.jpeg" alt="Receptionist Image">
+  
+</div>
+<div class="job-title">
+	    <h1>Receptionist</h1>
+
+  <img src="C:\Users\hp\Desktop\wakawaka\pee.jpeg" alt="Receptionist Image">
+  </div>
+        <div class="job-location">Location: Nyarugenge</div>
+		
+		
+        <div class="job-category">Category: Tourism and Hospitality</div>
+		
+        <div class="job-company">Company: AIM Lifecare Ltd</div>
+        <div class="job-date">Posted: 1 day ago</div>
+        <div class="job-deadline">Application Deadline: Dec 23, 2023</div>
+      </li>
+      <li class="job-item">
+        <div class="job-title">Accountant Assistant</div>
+        <div class="job-location">Location: Gasabo</div>
+        <div class="job-category">Category: Finance</div>
+        <div class="job-company">Company: AIM Lifecare Ltd</div>
+        <div class="job-date">Posted: 1 day ago</div>
+        <div class="job-deadline">Application Deadline: Dec 23, 2023</div>
+      </li>
+      <button type="submit" class="btn btn-primary"> <a href="new 5.html">career guidance</a>
+    </ul>
+	
+	
+	<div>
+    <footer class="footer">
+      &copy; 2023 Company Name. All rights reserved.
+    </footer>
+  
+</body>
+</html>

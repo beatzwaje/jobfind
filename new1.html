@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>agent</title>
+  <style>
+.agent-account {
+  max-width: 600px;
+  margin: 0 auto;
+}.pa
+{
+background-color:gray;
+color:darkblue;
+font-size:30px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #0056b3;
+}.employer-account{
+background-color:gray
+color:blue
+font-size:30px;
+}.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom:15px
+}
+
+.footer-bottom p {
+  font-size: 24px;
+  color: solidgreen;
+}
+
+.contact-info {
+  margin-top:12px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+<div class="agent-account">
+  <h2>Create Agent Account -</h2>
+  <h3>Login Information</h3>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="repeat-password">Repeat Password:</label>
+    <input type="password" id="repeat-password" name="repeat-password" required>
+    
+    <div class="button-container">
+      <button type="submit">Next</button>
+    </div>
+  </form>
+</div>
+<div class="agent-account">
+  <h2>Create Agent Account - Step 2</h2>
+  <h3>Your Personal Information</h3>
+  <form>
+    <label for="document-type">Document type:</label>
+    <select id="document-type" name="document-type" required>
+      <option value="">Select Document Type</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <label for="mediator-institution">Mediator institution name:</label>
+    <input type="text" id="mediator-institution" name="mediator-institution" required>
+    
+    <label for="mediator-name">Mediator Name:</label>
+    <input type="text" id="mediator-name" name="mediator-name" required>
+    
+    <label for="registration-number">Registration number:</label>
+    <input type="text" id="registration-number" name="registration-number" required>
+    
+    <label for="company-abbreviation">Company Name Abbreviation:</label>
+    <input type="text" id="company-abbreviation" name="company-abbreviation" required>
+    
+    <label for="ownership">Ownership:</label>
+    <input type="text" id="ownership" name="ownership" required>
+    
+    <label for="mediator-type">Mediator type:</label>
+    <input type="text" id="mediator-type" name="mediator-type" required>
+    
+    
+	
+	 <label for="opening-date">Opening date:</label>
+          <input class="form-control" name="starting_date" type="date" value="2020-02-01" id="example-date-input">
+    
+    <label for="registration-authority">Registration authority:</label>
+    <input type="text" id="registration-authority" name="registration-authority" required>
+    
+    <div class="button-container">
+      
+    </div>
+  </form>
+</div>
+<div class="agent-account">
+  <h2>Create Agent Account </h2>
+  <h3>Agent Address</h3>
+  <form>
+    <label for="province">Province:</label>
+    <select id="province" name="province" required>
+      <option value="">Select Province</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <label for="district">District:</label>
+    <select id="district" name="district" required>
+      <option value="">Select District</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <label for="sector">Sector:</label>
+    <select id="sector" name="sector" required>
+      <option value="">Select Sector</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number" required>
+    
+    <label for="pobox">P.O. Box:</label>
+    <input type="text" id="pobox" name="pobox" required>
+    
+    <label for="physical-address">Physical Address:</label>
+    <input type="text" id="physical-address" name="physical-address" required>
+    
+    <div class="button-container">
+     
+      <button type="button" onclick="history.back()">Back</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

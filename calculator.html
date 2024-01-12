@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>simple calculator</title>
+</head>
+<h1>simple calculator</h1>
+<body>
+
+<script>
+//comment
+/* this is multiple line comment*/
+ var today=new date()
+ var minutes=today.getminutes()
+ document.write(year+"/"+month+"/"+today)
+ //addition
+ function add(a,b)
+  {
+  return a + b;
+}
+
+// Subtraction
+function subtract(a, b) {
+  return a - b;
+}
+
+// Multiplication
+function multiply(a, b) {
+  return a * b;
+}
+
+// Division
+function divide(a, b) {
+  if (b === 0) {
+    return "Error: Division by zero";
+  }
+  return a / b;
+}
+
+// Example usage
+var x=prompt("enter the first number");
+var y=prompt("enter the second numbers")
+var z=prompt("enter the operator")
+if (z=="+"){ 
+
+document.write(add(x, y)); }  
+if (z=="-"){ 
+document.write(subtract(x, y)); }
+if (z=="*"){
+document.write(multiply(x, y));  }
+if (z=="/"){
+document.write(divide(x, y));}   
+//array
+product[0]="SHOES"
+product[1]="MANGOSS"
+product[2]="BANANASS"
+product[3]="SUGAR"
+product[4]="TREE"
+
+
+</script>
+</body>
+</html>

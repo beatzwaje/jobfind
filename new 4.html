@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .login-container h2 {
+      text-align: center;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .login-container .incorrect-message {
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .login-container .remember-me {
+      margin-bottom: 10px;
+    }
+
+    .login-container a {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #4CAF50;
+    }
+
+    .brand {
+      margin-bottom: 20px;
+    }
+
+    .brand p {
+      margin: 0;
+    }
+
+    .important-links a {
+      display: block;
+      text-decoration: none;
+      color: #4CAF50;
+      margin-bottom: 5px;
+    }
+
+    .important-links p {
+      margin: 0;
+    }
+
+    .contact-info p {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to postjob or manage applicants</h2>
+    <form action="#" method="post">
+      <label for="username">Username or email:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <p class="incorrect-message">Incorrect username or password.</p>
+      
+      <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember Me</label>
+		<input type="submit" value="Login">
+      </div>
+      </form>
+      
+    
+  </div>
+</body>
+</html>

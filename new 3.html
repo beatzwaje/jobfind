@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Listings</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.job-listings {
+  margin-bottom: 30px;
+}
+
+.filter-options {
+  margin-top: 20px;
+}
+
+.filter-options span {
+  margin-right: 10px;
+}
+
+.filter-options button {
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.job-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job-card h3 {
+  margin: 0;
+}
+
+.job-card .job-title {
+  font-weight: bold;
+}
+
+.job-card .salary {
+  margin-top: 10px;
+}
+
+.job-card .job-description {
+  margin-top: 10px;
+}
+
+.job-card .location {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Job Listings</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search by Title, Company, or Keyword...">
+      <button>Search</button>
+    </div>
+  </header>
+  
+  <main>
+    <div class="job-listings">
+      <h2>Showing 246 Job Results</h2>
+      <div class="filter-options">
+        <span>Based on your preferences:</span>
+        <button class="active">Full-time</button>
+        <button>Freelance</button>
+      </div>
+
+      <!-- Job Cards -->
+      <div class="job-card">
+        <h3>Maximoz Team</h3>
+        <p class="job-title">Database Programmer</p>
+        <p class="salary">$14,000 - $25,000</p>
+        <p class="job-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+        <p class="location">London, England</p>
+      </div>
+      
+      <!-- Repeat the job-card div for each job listing -->
+      
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2022 Designed & Developed by DexignZone</p>
+  </footer>
+</body>
+</html>

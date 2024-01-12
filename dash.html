@@ -1,0 +1,173 @@
+<html> 
+<head>
+<title>Personal</title>
+<style>
+
+.personal-info {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color:violet;
+  
+}
+
+h2 {
+  text-align: center;
+  color:black;
+  font-size:77;
+}
+
+p {
+  text-align: center;
+  color:green;
+  font-size:40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  margin-bottom:10px;
+  color:green;
+  font-size:30px;
+  
+}
+
+select {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.error {
+  display: none;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body background="w.jpeg">
+<div class="personal-info">
+  <h2><marquee><i><u>Your Personal Information</marquee></i></u></h2>
+  <p>Enter your personal information to get closer to companies.</p>
+  <form>
+    <label for="document-type">Document type:</label>
+    <select id="document-type" name="document-type" required>
+      <option value="">Select Document Type</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <label for="province">Province:</label>
+    <select id="province" name="province" required>
+      <option value="">Select Province</option>
+	 <option value="">kigali city</option>
+      <option value="">southern Province</option>
+	   <option value="">western province</option>
+	    <option value="">eastern Province</option>
+
+    </select>
+    <span class="error">Province cannot be blank.</span>
+    
+    <label for="district">District:</label>
+    <select id="district" name="district" required>
+      
+	 <option value="">Select District</option>
+	 <option value="">nyabihu</option>
+	 <option value="">rubavu</option>
+	 <option value="">rusizi</option>
+	 <option value="">nyarugenge</option>
+	 <option value="">kayonza</option>
+	 <option value="">musanze</option>
+      
+    </select>
+    <span class="error">District cannot be blank.</span>
+    
+    <label for="sector">Sector:</label>
+    <select id="sector" name="sector" required>
+      <option value="">burama</option>
+	  <option value="">bwiza</option>
+	  <option value="">cyohoha</option>
+	  <option value="">mukamira</option>
+	  <option value="">ruhengeri</option>
+	  <option value="">nyakiliba</option>
+      
+    </select>
+    <span class="error">Sector cannot be blank.</span>
+    
+    <label for="marital-status">Marital Status:</label>
+    <select id="marital-status" name="marital-status" required>
+	  <option value="">Select Marital Status</option>
+      <option value="">single</option>
+	  <option value="">married</option>
+    </select>
+    <span class="error">Marital status cannot be blank.</span>
+    
+    <label for="disability">Disability:</label>
+    <select id="disability" name="disability" required>
+      <option value="">Select Disability</option>
+      <!-- Add more options here -->
+    </select>
+    <span class="error">Disability cannot be blank.</span>
+    
+    <label for="nationality">Nationality:</label>
+    <select id="nationality" name="nationality" required>
+      <option value="">Select Country</option>
+      <option value="">cong</option>
+      
+	  <option value="">america</option>
+      <option value="">rwanda</option>
+      <option value=""> burundi</option>
+      <option value="">france</option>
+      
+    </select>
+    <span class="error">Nationality cannot be blank.</span>
+	<h2>Additional Information</h2>
+  <form>
+    <label for="additional-info">Enter your additional information:</label>
+    <textarea id="additional-info" name="additional-info" rows="4" required></textarea>
+    
+    <label for="kora">I know KORA through:</label>
+    <select id="kora" name="kora" required>
+      <option value="">Kindly select</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <label for="area-of-interest">Area of Interest:</label>
+    <select id="area-of-interest" name="area-of-interest" required>
+      <option value="">Select your area of interest</option>
+      <!-- Add more options here -->
+    </select>
+    
+    <div class="button-container">
+	<a href="gasha.html">
+      <button type="button">Back</button>
+      <button type="submit">register</button>
+    </div>
+  </form>
+    
+	
+    </div>
+  </form>
+</div>
+</body>
+</html>

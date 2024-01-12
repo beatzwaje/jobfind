@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"><style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+  .container {
+    display: flex;
+  }
+  
+  aside {
+    width: 260px;
+    background-color: #9c774d;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .danger {
+    color: red;
+  }
+  
+  .close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .material-icons-sharp {
+    margin-right: 10px;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .subnav-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+  
+  .subnav-content a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  <title>RES DashBoard</title>
+        
+      </head>
+      <body>
+      
+          <div class="container">
+              <aside>
+                  <div class="top">
+                    <div class="logo">
+                      <img src="a1.jpg">
+                      <h2>BTZ<span class="danger">JOBPOSTAL</span></h2>
+                    </div>
+                      <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">
+                          close
+                        </span>
+                      </div>
+                  </div>
+      
+          <div class="sidebar">
+              <a href="#">
+                  <span class="material-icons-sharp">
+                      grid_view
+                      </span>
+                  <h3>DashBoard</h3>
+              </a>
+                  <div class="navbar">
+                      <div class="subnav">
+                      <a href="#" class="active">
+                          <span class="material-icons-sharp">person</span>
+                        <button class="subnavbtn">MANAGE USER</button>
+                      </a>
+                        <div class="subnav-content">
+                          <a href="#">delete use</a>
+                          <a href="add customer.html">block user</a>
+                
+                          <a href="add customer.html">edit user</a>
+                
+                          <a href="add customer.html">all users</a>
+                        </div>
+                      </div>
+                  <div class="subnav">
+              <a href="#" class="active">
+                  <span class="material-icons-sharp">
+                      receipt_long
+                      </span>
+                  <h3>JOB ADVERTS</h3>
+            </a>
+              
+          <div class="subnav-content">
+                          <a href="#">add advert</a>
+                          <a href="add customer.html">pending</a>
+                
+                          <a href="add customer.html">approved advert</a>
+                
+                          <a href="add customer.html">rejected adverts</a>
+                </div>
+                </div>
+            <div class="subnav">
+            
+              <a href="#" class="active">
+                  <span class="material-icons-sharp">
+                      insights
+                      </span>
+                  <h3>BLOCK ACCOUNT</h3>
+              </a>
+          
+          <div class="subnav-content">
+                          <a href="#">block account</a>
+                          <a href="add customer.html">unblock account</a>
+                
+                          
+                </div></div>
+                      <div class="subnav">
+                      <a href="#" class="active">
+                      
+                  <span class="material-icons-sharp">
+                      email
+                      </span>
+                  <h3>MANAGE JOB ADVERTS</h3>
+                  <span class="material-icons-sharp">yh</span>
+            
+              </a>
+          <div class="subnav-content">
+                          
+                          <a href="add customer.html">add job advert</a>
+                          <a href="add customer.html">edit job advert</a>
+                <a href="add customer.html">delete job advert</a>
+                <a href="add customer.html">update job advert</a></a>
+                </div></div>
+                
+        <div class="subnav">
+              <a href="#" class="active">
+                  <span class="material-icons-sharp">
+                      report_gmailerrorred
+                      </span>
+                  <h3>ADVERTS</h3>
+              </a>
+              <a href="#" class="active">
+                  <span class="material-icons-sharp">
+                      settings
+                      </span>
+                  <h3>Settings</h3>
+              </a>
+             
+              <a href="#">
+                  <span class="material-icons-sharp">
+                      logout
+                      </span>
+                  <h3>Logout</h3>
+              </a>
+          </div>
+          </aside>
+        </body>
+</html>

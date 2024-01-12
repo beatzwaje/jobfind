@@ -1,0 +1,80 @@
+<html>
+<head> 
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+<meta charset="UTF-8">
+<meta htpp-equiv="X-UA_compatible"content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+body{
+margin:0;
+padding:0;
+font-family:'poppins', sans-serif;
+box-sizing:border-box;
+} .hero{  
+width:100%;
+height:100vh;
+background-position:center;
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+}.form{
+width:80%;
+height:300px;
+
+}.input-group{ 
+margin-bottom:30px;
+position:relative;
+}input,textarea{
+width:100%;
+padding:30px;
+outline:0;
+background:transparent;
+color:red;
+font-size:11px;
+}
+
+
+label{ 
+height:90%;
+position:relative;
+padding:10px;
+left:0;
+right:0;
+color:skyblue;
+cursor:text;
+}
+button{
+
+ padding:10PX 0;
+color:green;
+outline:none;
+background:transparent;
+cursor:pointer;
+}
+</style>
+</head>
+<body background="ph.avif" height="100%" width="100vh">
+<div class="hero">
+<form>
+<div class="input-group">
+<input type="email"id="email" placeholder="EMAIL"><ion-icon name="person-outline"></ion-icon>
+<label for="email">ENTER YOU EMAIL</label>
+<input type="names" id="fname">
+<label for="names">YOUR NAMES</label>
+<input type="phone" id="phonenmr">
+<label for="names">TELEPHONE NUMBER</label>
+</div>
+
+<div class="text">
+<i class='bx bx-message-rounded-dots'></i>
+<textarea id="message" rows="8"></textarea>
+
+<label for= "message">TEXT UR MESSAGE</label>
+</div>
+<button type="submit"><a href="">SUBMIT</button></a>
+</form>
+</div>
+</body>
+</html>
